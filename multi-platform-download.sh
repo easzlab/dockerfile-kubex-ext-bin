@@ -15,7 +15,7 @@ case "$ARC" in
       ;;
 esac
 
-mkdir -p /extra/{cni,containerd}
+mkdir -p /extra/cni /extra/containerd
 
 wget "https://github.com/containernetworking/plugins/releases/download/${CNI_PLUGINS_VERSION}/cni-plugins-linux-${ARCH}-${CNI_PLUGINS_VERSION}.tgz" && \
 tar zxf "cni-plugins-linux-${ARCH}-${CNI_PLUGINS_VERSION}.tgz" -C /extra/cni && \
